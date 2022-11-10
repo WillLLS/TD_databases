@@ -2,7 +2,7 @@
 
 -- 1. la liste des coureurs inscrits au club USO
 
-SELECT *
+SELECT coureur.nom, coureur.prenom
 FROM coureur 
 INNER JOIN club ON coureur.idClub=club.idClub
 WHERE club.nom="USO";
