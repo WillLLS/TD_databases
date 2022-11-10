@@ -13,7 +13,7 @@ SELECT nom
 FROM course 
 WHERE lieu="Orléans";
 
--- La liste des courses courues par Marie Duval
+-- 3. La liste des courses courues par Marie Duval
 
 SELECT course.nom
 FROM coureur
@@ -21,7 +21,7 @@ INNER JOIN participe ON coureur.idCoureur=participe.idCoureur
 INNER JOIN course ON participe.idCourse=course.idCourse
 WHERE coureur.nom="Duval" AND coureur.prenom="Marie";
 
--- Le classement de la course senior Foulées d'Orléans
+-- 4. Le classement de la course senior Foulées d'Orléans
 
 SELECT coureur.nom, coureur.prenom
 FROM coureur
